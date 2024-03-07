@@ -6,4 +6,4 @@ https://www.youtube.com/watch?v=SqcY0GlETPk
 
 npm install in the main folder
 
-npm run dev to start the server at http://localhost:5173/
+npm run dev to start the server at http://localhost:5174/
