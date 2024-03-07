@@ -1,15 +1,24 @@
+import { MouseEvent } from "react";
+
 function ListGroup() {
 	let colors = ["red", "blue", "green", "yellow", "orange"];
-    colors = [];
+
+    // Event handler
+    const handleClick = (event: MouseEvent) => console.log(event);
 
 	return (
 		// syntax for fragments: <></>
 		<>
 			<h1>List</h1>
-            {colors.length === 0 && <p>No colors available</p>}
+			{colors.length === 0 && <p>No colors available</p>}
 			<ul className="list-group">
 				{colors.map((color) => (
-					<li key={color}>{color}</li>
+					<li
+						className="list-group-item"
+						key={color}
+						onClick={handleClick}>
+						{color}
+					</li>
 				))}
 			</ul>
 		</>
